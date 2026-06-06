@@ -1,0 +1,13 @@
+uuid: a0421868-53ba-4eb8-934f-f06fbae47a59
+langcode: en
+status: true
+dependencies: {  }
+id: 2_column_layout
+label: '2 column layout'
+description: ''
+data: "<div class=\"row\">\r\n    <div class=\"col-sm-6\">\r\n      One of two columns\r\n    </div>\r\n    <div class=\"col-sm-6\">\r\n      two of two columns\r\n    </div>\r\n  </div>\r\n<p> &nbsp; </p>"
+icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\">\r\n  <line x1=\"3\" y1=\"6\" x2=\"10\" y2=\"6\"/>\r\n  <line x1=\"3\" y1=\"10\" x2=\"10\" y2=\"10\"/>\r\n  <line x1=\"3\" y1=\"14\" x2=\"10\" y2=\"14\"/>\r\n  <line x1=\"3\" y1=\"18\" x2=\"10\" y2=\"18\"/>\r\n\r\n  <line x1=\"14\" y1=\"6\" x2=\"21\" y2=\"6\"/>\r\n  <line x1=\"14\" y1=\"10\" x2=\"21\" y2=\"10\"/>\r\n  <line x1=\"14\" y1=\"14\" x2=\"21\" y2=\"14\"/>\r\n  <line x1=\"14\" y1=\"18\" x2=\"21\" y2=\"18\"/>\r\n</svg>"
+textFormats:
+  filtered_html: filtered_html
+  full_html: full_html
+weight: -7

@@ -1,0 +1,254 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor5
+format: full_html
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - sourceEditing
+      - htmlEmbed
+      - '|'
+      - undo
+      - redo
+      - '|'
+      - insertTable
+      - drupalInsertImage
+      - horizontalLine
+      - codeBlock
+      - code
+      - kbd
+      - '|'
+      - bulletedList
+      - numberedList
+      - indent
+      - outdent
+      - blockQuote
+      - '-'
+      - heading
+      - style
+      - insertTemplate
+      - alignment
+      - selectAll
+      - showBlocks
+      - '|'
+      - bold
+      - italic
+      - removeFormat
+      - '|'
+      - link
+      - anchor
+      - findAndReplace
+  plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
+    ckeditor5_codeBlock:
+      languages:
+        -
+          label: 'Plain text'
+          language: plaintext
+        -
+          label: Apache
+          language: apache
+        -
+          label: 'Bash Shell'
+          language: shell
+        -
+          label: C
+          language: c
+        -
+          label: 'C#'
+          language: cs
+        -
+          label: C++
+          language: cpp
+        -
+          label: CSS
+          language: css
+        -
+          label: Diff
+          language: diff
+        -
+          label: HTML
+          language: html
+        -
+          label: Java
+          language: java
+        -
+          label: JavaScript
+          language: javascript
+        -
+          label: PHP
+          language: php
+        -
+          label: Powershell
+          language: powershell
+        -
+          label: Python
+          language: python
+        -
+          label: Ruby
+          language: ruby
+        -
+          label: TypeScript
+          language: typescript
+        -
+          label: XML
+          language: xml
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+    ckeditor5_imageResize:
+      allow_resize: true
+    ckeditor5_list:
+      properties:
+        reversed: false
+        startIndex: true
+        styles: true
+      multiBlock: true
+    ckeditor5_plugin_pack_auto_image__auto_image:
+      enabled: true
+    ckeditor5_plugin_pack_find_and_replace__find_and_replace:
+      ui_type: dialog
+    ckeditor5_plugin_pack_html_embed__html_embed:
+      previews: false
+      use_purifier: false
+    ckeditor5_plugin_pack_paste_markdown__paste_markdown:
+      enabled: true
+    ckeditor5_plugin_pack_word_count__word_count:
+      word_count_enabled: true
+      word_count_mode: words_chars
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<kbd>'
+        - '<div class*>'
+        - '<iframe allow allow-fullscreen frameborder height width src referrerpolicy>'
+        - '<span>'
+        - '<nobr>'
+        - '<i>'
+        - '<a hreflang*>'
+        - '<blockquote cite*>'
+        - '<p class>'
+        - '<ul class*>'
+        - '<ol class*>'
+        - '<h2 id*>'
+        - '<h3 id*>'
+        - '<h4 id*>'
+        - '<h5 id*>'
+        - '<button>'
+        - '<table class*>'
+        - '<thead class*>'
+        - '<tbody class*>'
+        - '<tr class*>'
+        - '<th class* scope*>'
+        - '<td class* scope*>'
+    ckeditor5_style:
+      styles:
+        -
+          label: 'No-wrap Text'
+          element: '<span class="text-nowrap">'
+        -
+          label: 'Small Text'
+          element: '<span class="smalltext">'
+        -
+          label: 'Screen Reader Only inline'
+          element: '<span class="visually-hidden">'
+        -
+          label: 'Screen Reader Only div'
+          element: '<div class="visually-hidden">'
+        -
+          label: 'Alert Info'
+          element: '<div class="alert alert-info">'
+        -
+          label: 'Alert Danger'
+          element: '<div class="alert alert-danger">'
+        -
+          label: 'Alert Warning'
+          element: '<div class="alert alert-warning">'
+        -
+          label: 'Alert Secondary'
+          element: '<div class="alert alert-secondary">'
+        -
+          label: 'Left Align Table'
+          element: '<table class="align-left">'
+        -
+          label: 'No Border Table'
+          element: '<table class="noborder">'
+        -
+          label: 'Wide Table'
+          element: '<table class="wide">'
+        -
+          label: 'Alt-row Table'
+          element: '<table class="alt-row-table">'
+        -
+          label: 'Button Primary'
+          element: '<a class="btn btn-primary">'
+        -
+          label: 'Button Secondary'
+          element: '<a class="btn btn-secondary">'
+        -
+          label: 'Label - Default'
+          element: '<span class="label label-default">'
+        -
+          label: 'Label - Primary'
+          element: '<span class="label label-primary">'
+        -
+          label: 'Label - Success'
+          element: '<span class="label label-success">'
+        -
+          label: 'Label - Info'
+          element: '<span class="label label-info">'
+        -
+          label: 'Label - Warning'
+          element: '<span class="label label-warning">'
+        -
+          label: 'Label - Danger'
+          element: '<span class="label label-danger">'
+        -
+          label: 'Inline Code'
+          element: '<span class="code">'
+        -
+          label: 'Keyboard Input'
+          element: '<span class="kbd">'
+    ckeditor_codemirror_source_editing:
+      enable: true
+      mode: htmlmixed
+      options:
+        autoCloseBrackets: true
+        autoCloseTags: true
+        folding: true
+        lineNumbers: true
+        lineWrapping: true
+        matchBrackets: true
+        matchTags: true
+        searchBottom: true
+        styleActiveLine: true
+    editor_advanced_image_image:
+      disable_balloon: false
+      default_class: ''
+      enabled_attributes:
+        - class
+        - id
+        - title
+    editor_advanced_link_link:
+      enabled_attributes: {  }
+image_upload:
+  status: true
+  scheme: public
+  directory: 'inline-images/[date:custom:Y]/[date:custom:m]'
+  max_size: null
+  max_dimensions:
+    width: null
+    height: null

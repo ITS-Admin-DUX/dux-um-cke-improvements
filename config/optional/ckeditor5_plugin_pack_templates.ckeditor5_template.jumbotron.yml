@@ -1,0 +1,13 @@
+uuid: b8dcdf67-88f8-47a2-bc14-47f76b046403
+langcode: en
+status: true
+dependencies: {  }
+id: jumbotron
+label: Jumbotron
+description: ''
+data: "<div class=\"jumbotron\">\r\n  <h2>Title</h2>\r\n  <p>Descriptive body copy</p>\r\n  <p><a class=\"btn btn-primary btn-large\" href=\"#\" role=\"button\">Learn more</a></p>\r\n</div>\r\n<p> &nbsp; </p>"
+icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Pro v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M64 192C64 156.7 92.7 128 128 128L512 128C547.3 128 576 156.7 576 192L576 448C576 483.3 547.3 512 512 512L128 512C92.7 512 64 483.3 64 448L64 192z"/></svg>'
+textFormats:
+  filtered_html: filtered_html
+  full_html: full_html
+weight: -5

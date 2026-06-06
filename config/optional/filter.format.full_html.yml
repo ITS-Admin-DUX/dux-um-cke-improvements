@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Full HTML'
+format: full_html
+weight: -9
+filters:
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 1
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<cite> <kbd> <div class* class="visually-hidden alert alert-info alert-danger alert-warning alert-secondary"> <iframe allow allow-fullscreen frameborder height width src referrerpolicy> <span class="text-nowrap smalltext visually-hidden label label-default label-primary label-success label-info label-warning label-danger code kbd"> <nobr> <i> <a hreflang* class="btn btn-primary btn-secondary"> <blockquote cite*> <p class> <ul class*> <ol class*> <h2 id*> <h3 id*> <h4 id*> <h5 id*> <button> <table class* class="align-left noborder wide alt-row-table"> <thead class*> <tbody class*> <tr class*> <th class* scope*> <td class* scope*>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72

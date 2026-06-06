@@ -1,0 +1,13 @@
+uuid: 19aa9a28-4dbe-4fe0-8321-5a954ac6d384
+langcode: en
+status: true
+dependencies: {  }
+id: 3_columns
+label: '3 column layout'
+description: ''
+data: "<div class=\"row\">\r\n    <div class=\"col-sm-4\">\r\n      One of three columns\r\n    </div>\r\n    <div class=\"col-sm-4\">\r\n      two of three columns\r\n    </div>\r\n    <div class=\"col-sm-4\">\r\n      three of three columns\r\n    </div>\r\n  </div>\r\n<p> &nbsp; </p>"
+icon: "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" xmlns=\"http://www.w3.org/2000/svg\">\r\n  <!-- col 1 -->\r\n  <line x1=\"2\" y1=\"6\" x2=\"6\" y2=\"6\"/>\r\n  <line x1=\"2\" y1=\"10\" x2=\"6\" y2=\"10\"/>\r\n  <line x1=\"2\" y1=\"14\" x2=\"6\" y2=\"14\"/>\r\n  <line x1=\"2\" y1=\"18\" x2=\"6\" y2=\"18\"/>\r\n\r\n  <!-- col 2 -->\r\n  <line x1=\"10\" y1=\"6\" x2=\"14\" y2=\"6\"/>\r\n  <line x1=\"10\" y1=\"10\" x2=\"14\" y2=\"10\"/>\r\n  <line x1=\"10\" y1=\"14\" x2=\"14\" y2=\"14\"/>\r\n  <line x1=\"10\" y1=\"18\" x2=\"14\" y2=\"18\"/>\r\n\r\n  <!-- col 3 -->\r\n  <line x1=\"18\" y1=\"6\" x2=\"22\" y2=\"6\"/>\r\n  <line x1=\"18\" y1=\"10\" x2=\"22\" y2=\"10\"/>\r\n  <line x1=\"18\" y1=\"14\" x2=\"22\" y2=\"14\"/>\r\n  <line x1=\"18\" y1=\"18\" x2=\"22\" y2=\"18\"/>\r\n</svg>"
+textFormats:
+  filtered_html: filtered_html
+  full_html: full_html
+weight: -6
