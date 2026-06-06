@@ -1,0 +1,20 @@
+name: 'U-M CKEditor Improvements'
+type: module
+description: 'Improvements for ckeditor in a meta package'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - ckeditor5_plugin_pack:ckeditor5_plugin_pack
+  - ckeditor5_plugin_pack:ckeditor5_plugin_pack_auto_image
+  - ckeditor5_plugin_pack:ckeditor5_plugin_pack_find_and_replace
+  - ckeditor5_plugin_pack:ckeditor5_plugin_pack_paste_markdown
+  - ckeditor5_plugin_pack:ckeditor5_plugin_pack_select_all
+  - ckeditor5_plugin_pack:ckeditor5_plugin_pack_templates
+  - ckeditor5_plugin_pack:ckeditor5_plugin_pack_word_count
+  - ckeditor_codemirror
+  - ckeditor_codemirror:ckeditor_codemirror
+  - editor_advanced_image:editor_advanced_image
+  - editor_advanced_link:editor_advanced_link
+  - highlightjs_input_filter:highlightjs_input_filter
+  - hotkeys_for_save:hotkeys_for_save
+  - anchor_link:anchor_link

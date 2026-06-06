@@ -1,0 +1,20 @@
+{
+    "name": "dux-umich/um_cke_improvements",
+    "description": "CKEditor improvements",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "Joseph Richardson",
+            "email": "rijoseph@umich.edu"
+        }
+    ],
+    "require": {
+        "drupal/anchor_link": "~3.0",
+        "drupal/ckeditor5_plugin_pack": "^1.4",
+        "drupal/ckeditor_codemirror": "^3.1",
+        "drupal/editor_advanced_image": "^3.1",
+        "drupal/editor_advanced_link": "^2.3",
+        "drupal/highlightjs_input_filter": "^1.1",
+        "drupal/hotkeys_for_save": "^2.0"
+    }
+}

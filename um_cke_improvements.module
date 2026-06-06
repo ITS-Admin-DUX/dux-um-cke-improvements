@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for U-M CKEditor Improvements module.
+ */
+
+use Drupal\ckeditor5\Plugin\CKEditor5PluginDefinition;
+
+/**
+ * Implements hook_page_attachments().
+ */
+function um_cke_improvements_page_attachments(array &$attachments): void {
+  if (!\Drupal::service('router.admin_context')->isAdminRoute()) {
+    return;
+  }
+
+  $attachments['#attached']['library'][] = 'um_cke_improvements/cke_improvements';
+}
+
+/**
+ * Implements hook_ckeditor5_plugin_info_alter().
+ */
+function um_cke_improvements_ckeditor5_plugin_info_alter(array &$plugin_definitions): void {
+  if (empty($plugin_definitions['ckeditor5_imageUrl']) || !($plugin_definitions['ckeditor5_imageUrl'] instanceof CKEditor5PluginDefinition)) {
+    return;
+  }
+
+  $plugin_definition = $plugin_definitions['ckeditor5_imageUrl']->toArray();
+  if (isset($plugin_definition['drupal']['conditions']['imageUploadStatus'])) {
+    unset($plugin_definition['drupal']['conditions']['imageUploadStatus']);
+    $plugin_definitions['ckeditor5_imageUrl'] = new CKEditor5PluginDefinition($plugin_definition);
+  }
+
+  if (empty($plugin_definitions['ckeditor5_imageUpload']) || !($plugin_definitions['ckeditor5_imageUpload'] instanceof CKEditor5PluginDefinition)) {
+    return;
+  }
+
+  $plugin_definition = $plugin_definitions['ckeditor5_imageUpload']->toArray();
+  $plugin_definition['ckeditor5']['config']['image']['insert']['integrations'][] = 'url';
+  $plugin_definitions['ckeditor5_imageUpload'] = new CKEditor5PluginDefinition($plugin_definition);
+}

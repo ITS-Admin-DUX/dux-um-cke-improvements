@@ -1,0 +1,5 @@
+services:
+  um_cke_improvements.route_subscriber:
+    class: Drupal\um_cke_improvements\EventSubscriber\UmCkeImprovementsRouteSubscriber
+    tags:
+      - { name: event_subscriber }
