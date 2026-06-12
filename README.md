@@ -134,12 +134,19 @@ and resolve conflicts as needed.
 
 ## VERIFYING THE CHANGES
 
-1. Open a CKEditor 5-enabled text format and verify image insertion includes the
-   URL integration behavior expected by your editorial workflow.
-2. Confirm image uploads succeed and return expected JSON payload from the
-   CKEditor upload endpoint.
-3. If behavior looks unchanged, rebuild caches (`drush cr`) and verify the
-   module is enabled.
+1. Start creating a basic page or article content item with a CKEditor 5 editor using the `full_html` or
+   `filtered_html` text format. 
+2. Confirm the Image button is a dropdown with both "Upload" and "URL" options available when the module is enabled.
+3. Confirm an image uploads successfully
+4. Confirm the image upload destination path is processed with token replacements as expected (for example,
+   `inline-images/[date:custom:Y]/[date:custom:m]` becomes `inline-images/2024/06`).
+5. Confirm the templates dropdown is available and inserting templates as expected.
+6. Confirm the style dropdown is available and applying styles as expected.
+7. CMD + S to save the content item and confirm hotkeys for save is working as expected.
+8. Confirm the find and replace plugin is working as expected.
+9. Confirm the word count plugin is working as expected.
+10. Confirm the select all plugin is working as expected.
+
 
 ## MAINTAINERS
 
