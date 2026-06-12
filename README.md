@@ -74,9 +74,25 @@ contributed modules listed above.
 
 ## INSTALLATION
 
-Install dependencies and enable the module using standard Drupal workflows.
+Update composer with new repo
+
+```json
+{
+    "repositories": {
+        "um_cke_improvements": {
+            "type": "vcs",
+            "url": "git@github.com:its-admin-dux/dux-um-cke-improvements.git"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+```
+
+Install the module using composer and enable it with drush:
 
 ```bash
+composer require dux-umich/um_cke_improvements:dev-main --prefer-source
 drush en um_cke_improvements -y  
 ```
 
