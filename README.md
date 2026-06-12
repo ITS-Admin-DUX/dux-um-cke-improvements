@@ -80,16 +80,20 @@ Install dependencies and enable the module using standard Drupal workflows.
 drush en um_cke_improvements -y  
 ```
 
-Import configuration if needed:  
-
-```bash
-drush config:import --partial --source=modules/custom/um_cke_improvements/config/optional/ -y
-```
-
 Enable the HTML embed module
 ```bash
  drush config:set ckeditor5_plugin_pack.settings allow_html_embed true -y
  drush en ckeditor5_plugin_pack_html_embed
+```
+
+Import configuration if needed:  
+on your local ddev:
+```bash
+ddev drush config:import --partial --source=web/modules/contrib/um_cke_improvements/config/optional/ -y
+```
+on remote Pantheon environments:
+```bash
+ terminus drush config:import --partial --source=/code/web/modules/contrib/um_cke_improvements/config/optional/ -y
 ```
 
 Then rebuild caches:
